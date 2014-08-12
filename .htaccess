@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]*)([/])?([^/]*)?([/])?(.*)$ index.php?nav=$1&list=$3&additional=$5 [L,QSA]

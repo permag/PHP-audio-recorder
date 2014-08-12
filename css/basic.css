@@ -1,0 +1,388 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* BASIC */
+
+body {
+	font-family: Verdana, sans-serif;
+}
+h1 {
+	font-size: 25px;
+}
+h2 {
+	font-size: 21px;
+	margin: 7px 3px 9px 20px;
+}
+h3 {
+	font-size: 18px;
+	padding: 3px;
+}
+p {
+	font-size: 14px;
+}
+a:active, a:visited, a:link, a:hover {
+	color: #96370a;
+}
+h3 a:active, h3 a:visited, h3 a:link, h3 a:hover {
+	color: white;
+	text-decoration: none;
+}
+object, embed {
+	outline: none !important;
+
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#container {
+	position: relative;
+	z-index: 2;
+	width: 790px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 12px;
+	display: block;
+	overflow: auto;
+	clear: both;
+	background: rgba(0,0,0,0.1);
+  	-webkit-box-shadow: #777 0 0 29px;
+	-moz-box-shadow: #777 0 0 29px;
+	box-shadow: #777 0 0 29px;
+}
+#leftSection {
+	width: 190px;
+	display: block;
+	float: left;
+	padding-bottom: 15px;
+	background: #ff5e10;
+	color: white;
+	padding: 9px;
+
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	border-radius: 9px;
+  	-webkit-box-shadow: #777 0 0 7px;
+	-moz-box-shadow: #777 0 0 7px;
+	box-shadow: #777 0 0 7px;
+}
+#mainSection {
+	width: 350px;
+	display: block;
+	float: left;
+	margin: 0 12px;
+}
+#rightSection {
+	width: 190px;
+	display: block;
+	float: left;
+	background: #ff5e10;
+	color: white;
+	padding: 9px;
+
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	border-radius: 9px;
+  	-webkit-box-shadow: #777 0 0 7px;
+	-moz-box-shadow: #777 0 0 7px;
+	box-shadow: #777 0 0 7px;
+}
+h1#logo, h1#logo a {
+	font-size: 25px;
+	font-weight: bold;
+	margin: 7px 0 3px 7px;
+	color: white;
+	text-decoration: none;
+	text-shadow: 3px 3px 18px #ffbe74;
+
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+#sideMenu  {
+	margin-bottom: 40px;
+}
+#sideMenu li, #sideMenu a {
+	font-size: 19px;
+	color: #eeeeee;
+	margin-left: 10px;
+	margin-bottom: 9px;
+	text-decoration: none;
+}
+#sideMenu a:before {
+	content: '- ';
+}
+#sideMenu a:hover {
+	color: #0e0e0e;
+} 
+
+/* list of recs */
+#audioListHeader {
+	background: #ff5e10;
+	color: white;
+	font-size: 14px;
+	width: 110px;
+	margin-left: 9px;
+	-webkit-border-radius: 9px 9px 0 0;
+	-moz-border-radius: 9px 9px 0 0;
+	border-radius: 9px 9px 0 0;
+	text-align: center;
+
+}
+#recordingList {
+	padding: 7px;
+	background: white;
+
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	border-radius: 9px;
+}
+.recordingDiv {
+	padding: 4px;
+	margin: 5px 5px 11px 5px;
+	background: #e0dbdf
+}
+.newRecording {
+	background: #cb8525;
+	display: none;
+}
+.newRecordingSent {
+	background: #a4a1a6;
+}
+.newRecordingClicked {
+	background: #a4a1a6;
+}
+.recordingTime {
+	padding-top: 3px;
+	font-size: 10px;
+}
+audio {
+	margin-top: 7px;
+	width: 318px;
+}
+.from {
+	display: inline;
+}
+.username {
+}
+/* from session username */
+#username {
+	margin-left: 4px;
+	margin-bottom: 7px;
+	font-size: 12px;
+}
+.unheardMessage {
+	font-size: 9px;
+	color: black;
+	float: right;
+	display: block;
+}
+.remove, .remove a {
+	float: right;
+	font-size: 9px;
+	margin-left: 3px;
+	color: black;
+	text-decoration: none;
+}
+.deleteRecInbox, .deleteRecOutbox { /* x post button */
+	border: 1px solid gray;
+	background: #dcdcdc;
+}
+
+/* Login */
+#loginView, #registerView {
+	width: 300px;
+	padding: 3px;
+	margin: 3px;
+	float: left;
+	text-align: right;
+	display: block;
+}
+#loginRememberMe {
+	font-size: 11px;
+}
+.errorMessages {
+	display: none;
+	z-index: 9999999;
+	width: 350px;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+	clear: both;
+	position: absolute;
+	top: -3px;
+	left: 225px;
+	background: rgba(203,188,2,0.9);
+	padding: 7px;
+	-webkit-border-radius: 0 0 9px 9px;
+	-moz-border-radius: 0 0 9px 9px;
+	border-radius: 0 0 9px 9px;
+  	-webkit-box-shadow: #777 0 0 29px;
+	-moz-box-shadow: #777 0 0 29px;
+	box-shadow: #777 0 0 29px;
+}
+
+
+/* RECORDER */
+#recorderContainer {
+	padding: 9px;
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	border-radius: 9px;
+	background: rgba(0,0,0,0.7);
+  	-webkit-box-shadow: #777 0 0 7px;
+	-moz-box-shadow: #777 0 0 7px;
+	box-shadow: #777 0 0 7px;
+	color: #999;
+	font-size: 11px;
+}
+#recorderLevel {
+	float: left;
+	width: 99px;
+	padding: 5px;
+}
+#recorderTime {
+	padding: 5px;
+	width: 150px;
+	display: block;
+}
+#recorderStatus {
+	padding: 5px;
+	margin-bottom: 3px;
+	width: 170px;
+	float: left;
+}
+#levelbase {
+	float: left;
+	width: 170px;
+	height: 20px;
+	overflow: hidden;
+	border: 1px solid gray;
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	border-radius: 9px;
+	background: white;
+}
+#levelbar {
+	height: 20px;
+	width: 2px;
+	background-color: red;
+}
+#record {
+	color: #bd0001;
+	font-size: 12px;
+	font-weight: bold;
+	width: 77px;
+	height: 27px;
+	margin-left: 7px;
+}
+#stop {
+	font-size: 12px;
+	font-weight: bold;
+	width: 77px;
+	height: 27px;
+}
+#recBeepDiv {
+	display: none;
+}
+
+
+/* follow scroll */
+#rightSectionWrapper {
+	float: left;
+}
+#rightSection {
+	position: relative;
+	top: 0;
+}
+#rightSection.fixed {
+  position: fixed;
+  top: 0; /* height of headerBar */
+  z-index: 9;
+}
+
+/* *** */
+
+/* share */
+#shareToUsernameContainer {
+	margin: 0px 11px 15px 11px;
+	padding: 7px 15px 5px 15px;
+	-webkit-border-radius: 0 0 9px 9px;
+	-moz-border-radius: 0 0 9px 9px;
+	border-radius: 0 0 9px 9px;
+	background: #d5d5d5;
+  	-webkit-box-shadow: #999 0 0 2px;
+	-moz-box-shadow: #999 0 0 2px;
+	box-shadow: #999 0 0 2px;
+}
+#shareToUsername {
+	padding: 5px;
+	margin-top: 5px;
+	width: 121px;
+	float: left;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	color: #b87921;
+}
+#send {
+	font-size: 12px;
+	margin: 15px 5px 5px 13px;
+	width: 110px;
+	height: 22px;
+}
+
+/* Ajax autocomplete */
+.ui-menu-item {
+	font-size: 10px;
+}
+
